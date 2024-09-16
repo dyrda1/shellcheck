@@ -1,0 +1,5 @@
+name: "Markdown Linter"
+description: "Lints all .md files in the repository using Proselint or write-good"
+runs:
+  using: "docker"
+  image: "Dockerfile"

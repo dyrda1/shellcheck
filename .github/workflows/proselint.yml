@@ -1,0 +1,15 @@
+name: "Lint Markdown Files"
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint Markdown Files
+        uses: ./.github/actions/linter
