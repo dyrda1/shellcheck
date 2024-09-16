@@ -6,4 +6,4 @@ plot-%.png: %.dat plot.py
 
 .PHONY: clean
 clean:
-	git ls-files | xargs rm -f
+	git ls-files -o | xargs rm -f
